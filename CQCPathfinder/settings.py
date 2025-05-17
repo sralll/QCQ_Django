@@ -31,6 +31,9 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['qcq-django.onrender.com', 'localhost', '127.0.0.1']
 
+CSRF_TRUSTED_ORIGINS = [
+    'https://qcq-django.onrender.com',
+]
 
 # Application definition
 
