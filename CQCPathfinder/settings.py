@@ -27,9 +27,9 @@ STATICFILES_DIRS = [
 SECRET_KEY = "mxaww44ihjwnl5_7b&^juj8mz*$+@x0j29&wp%48q*(!a9g57k"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['qcq-django.onrender.com', 'localhost', '127.0.0.1:8000']
+ALLOWED_HOSTS = ['qcq-django.onrender.com', 'localhost', '127.0.0.1']
 
 
 # Application definition
