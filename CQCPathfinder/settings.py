@@ -14,7 +14,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'maps')
 STATIC_URL = '/static'
 STATICFILES_DIRS = [BASE_DIR / "static"]  # if you keep static files outside apps
 
-STATIC_ROOT = BASE_DIR / "staticfiles"
+STATIC_ROOT = BASE_DIR / "static"
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.2/howto/deployment/checklist/
