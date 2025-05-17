@@ -23,9 +23,9 @@ STATIC_ROOT = BASE_DIR / "staticfiles"
 SECRET_KEY = "mxaww44ihjwnl5_7b&^juj8mz*$+@x0j29&wp%48q*(!a9g57k"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [qcq-django.onrender.com]
 
 
 # Application definition
@@ -128,8 +128,6 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.2/howto/static-files/
-
-STATIC_URL = "static/"
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
