@@ -9,12 +9,16 @@ MAPS_DIR = os.path.join(BASE_DIR, 'maps')
 MEDIA_URL = '/maps/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'maps')
 
+# Used by Django in development and by templates to build URLs
+STATIC_URL = '/static/'
 
-# settings.py
-STATIC_URL = '/static'
-STATICFILES_DIRS = [BASE_DIR / "static"]  # if you keep static files outside apps
+# Where collectstatic will put all static files for production use
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
-STATIC_ROOT = BASE_DIR / "static"
+# Your source static directory (used only in development)
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'static'),
+]
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.2/howto/deployment/checklist/
@@ -25,7 +29,7 @@ SECRET_KEY = "mxaww44ihjwnl5_7b&^juj8mz*$+@x0j29&wp%48q*(!a9g57k"
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['qcq-django.onrender.com', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['qcq-django.onrender.com', 'localhost', '127.0.0.1:8000']
 
 
 # Application definition
