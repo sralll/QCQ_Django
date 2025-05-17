@@ -11,7 +11,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'maps')
 
 
 # settings.py
-STATIC_URL = '/static/'
+STATIC_URL = '/static'
 STATICFILES_DIRS = [BASE_DIR / "static"]  # if you keep static files outside apps
 
 STATIC_ROOT = BASE_DIR / "staticfiles"
